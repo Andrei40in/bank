@@ -120,6 +120,12 @@ public class BankTest {
         // проверить, что найден именно user3
         assertEquals(user3, userService.findUserById(user3.getId()));
     }
+    @Test
+    void testUserTransactionCount(){
+        bank.transfer(1,2,500);
+        bank.transfer(1,2,500);
+        assertEquals(2,bank.getUserTransactionCount(1));
+    }
 
 }
 

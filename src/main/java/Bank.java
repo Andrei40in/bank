@@ -71,4 +71,7 @@ public class Bank {
                 + "isAdult: " + client.isAdult() + ".";
 
     }
+    public int getUserTransactionCount(int userId){
+        return getUserTransactions(userId).size();
+    }
 }
