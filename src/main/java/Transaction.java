@@ -11,8 +11,22 @@ public class Transaction {
         this.amount = amount;
     }
 
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id=" + id +
+                ", sender=" + sender +
+                ", recipient=" + recipient +
+                ", amount=" + amount +
+                '}';
+    }
+
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public User getSender() {

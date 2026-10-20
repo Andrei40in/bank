@@ -5,6 +5,16 @@ public class User {
     private double balance;
 
     @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", balance=" + balance +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (!(o instanceof User)){
             return false;
